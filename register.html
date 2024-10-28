@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="registerStyles.css">
+</head>
+
+<body>
+
+    <div class="container2">
+        <div class="reg_title">
+            Register for Sethmin Institute
+        </div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">School</span>
+                        <input type="text" placeholder="Enter your school name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Grade</span>
+                        <input type="text" placeholder="Enter your grade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Age</span>
+                        <input type="text" placeholder="Enter your age" required>
+                    </div>
+
+                    <div class="gender-details">
+
+                        <span class="gender-title"> Gender</span>
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <input type="radio" name="gender" id="dot-3">
+                        <div class="category">
+
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Male</span>
+                            </label>
+
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Female</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">Prefer not to say</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Parent/ Gardian Name</span>
+                        <input type="text" placeholder="Mr/Mrs" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Permenent address</span>
+                        <input type="text" placeholder="Enter your address" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Contact No.</span>
+                        <input type="text" placeholder="0712345678" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Subject</span>
+                        <input type="text" placeholder="Enter the subject that you want to register" required>
+                    </div>
+
+
+
+                </div>
+
+                <div class="submit_button">
+                    <button type="submit" class="sub_btn" onclick="openPopup()">Register</button>
+                    <div class="popup" id="popup">
+                        <img src="tick.png">
+                        <h2>Thank You!</h2>
+                        <p>Your details has been successfully submitted. Thanks!</p>
+                        <button type="ok_btn" onclick="closePopup()"> OK </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="reg_cancel_btn">
+                <a href="index.html">
+                    <input type="submit" value="Cancel">
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
+    </script>
+
+</body>
+
+</html>
